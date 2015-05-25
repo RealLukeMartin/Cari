@@ -62,16 +62,25 @@ html, body {
 .carousel-wrapper .item-1 {
   z-index: 2;
   opacity: 1;
+  background-color: #009CE0;
 }
 /* line 63, ../sass/cari.scss */
+.carousel-wrapper .item-2 {
+  background-color: #0277BD;
+}
+/* line 66, ../sass/cari.scss */
+.carousel-wrapper .item-3 {
+  background-color: #5A9E9F;
+}
+/* line 70, ../sass/cari.scss */
 .carousel-wrapper *:target ~ .item-1 {
   opacity: 0;
 }
-/* line 67, ../sass/cari.scss */
+/* line 74, ../sass/cari.scss */
 .carousel-wrapper #target-item-1:target ~ .item-1 {
   opacity: 1;
 }
-/* line 71, ../sass/cari.scss */
+/* line 78, ../sass/cari.scss */
 .carousel-wrapper #target-item-2:target ~ .item-2, .carousel-wrapper #target-item-3:target ~ .item-3 {
   z-index: 3;
   opacity: 1;
