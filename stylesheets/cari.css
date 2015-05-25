@@ -1,0 +1,78 @@
+/* line 1, ../sass/cari.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 5, ../sass/cari.scss */
+.carousel-wrapper {
+  position: relative;
+}
+/* line 8, ../sass/cari.scss */
+.carousel-wrapper .carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+/* line 18, ../sass/cari.scss */
+.carousel-wrapper .carousel-item .arrow {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 50px;
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+  background: url("/carousel-arrow-dark.png") 50% 50%/20px no-repeat;
+}
+/* line 27, ../sass/cari.scss */
+.carousel-wrapper .carousel-item .arrow.arrow-prev {
+  left: 0;
+}
+/* line 31, ../sass/cari.scss */
+.carousel-wrapper .carousel-item .arrow.arrow-next {
+  right: 0;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+/* line 38, ../sass/cari.scss */
+.carousel-wrapper .carousel-item.light {
+  color: white;
+}
+/* line 41, ../sass/cari.scss */
+.carousel-wrapper .carousel-item.light .arrow {
+  background: url("/carousel-arrow-light.png") 50% 50%/20px no-repeat;
+}
+@media (max-width: 480px) {
+  /* line 47, ../sass/cari.scss */
+  .carousel-wrapper .carousel-item .arrow, .carousel-wrapper .carousel-item.light .arrow {
+    background-size: 10px;
+    background-position: 10px 50%;
+  }
+}
+/* line 54, ../sass/cari.scss */
+.carousel-wrapper [id^="target-item"] {
+  display: none;
+}
+/* line 58, ../sass/cari.scss */
+.carousel-wrapper .item-1 {
+  z-index: 2;
+  opacity: 1;
+}
+/* line 63, ../sass/cari.scss */
+.carousel-wrapper *:target ~ .item-1 {
+  opacity: 0;
+}
+/* line 67, ../sass/cari.scss */
+.carousel-wrapper #target-item-1:target ~ .item-1 {
+  opacity: 1;
+}
+/* line 71, ../sass/cari.scss */
+.carousel-wrapper #target-item-2:target ~ .item-2, .carousel-wrapper #target-item-3:target ~ .item-3 {
+  z-index: 3;
+  opacity: 1;
+}
