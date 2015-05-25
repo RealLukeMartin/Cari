@@ -64,7 +64,8 @@ html, body {
   	background-color: #0277BD;
   }
   .item-3 {
-  	background-color: #5A9E9F;
+  	background: url('../blurry.jpg') no-repeat;
+  	background-size: cover;
   }
 
   *:target ~ .item-1 {
