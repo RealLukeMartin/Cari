@@ -22,7 +22,7 @@ html, body {
     width: 50px;
     height: 100%;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
-    background: url("/carousel-arrow-dark.png") 50% 50% / 20px no-repeat;
+    background: url('../arrow.png') 50% 50% / 20px no-repeat;
 
       &.arrow-prev {
         left: 0;
@@ -39,7 +39,7 @@ html, body {
       color: white;
 
       .arrow {
-        background: url("/carousel-arrow-light.png") 50% 50% / 20px no-repeat;
+        background: url('../arrow.png') 50% 50% / 20px no-repeat;
       }
     }
 
@@ -63,7 +63,7 @@ html, body {
   *:target ~ .item-1 {
     opacity: 0;
   }
-  
+
   #target-item-1:target ~ .item-1 {
     opacity: 1;
   }

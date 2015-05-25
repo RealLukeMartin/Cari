@@ -27,7 +27,7 @@ html, body {
   width: 50px;
   height: 100%;
   -webkit-tap-highlight-color: transparent;
-  background: url("/carousel-arrow-dark.png") 50% 50%/20px no-repeat;
+  background: url("../arrow.png") 50% 50%/20px no-repeat;
 }
 /* line 27, ../sass/cari.scss */
 .carousel-wrapper .carousel-item .arrow.arrow-prev {
@@ -45,7 +45,7 @@ html, body {
 }
 /* line 41, ../sass/cari.scss */
 .carousel-wrapper .carousel-item.light .arrow {
-  background: url("/carousel-arrow-light.png") 50% 50%/20px no-repeat;
+  background: url("../arrow.png") 50% 50%/20px no-repeat;
 }
 @media (max-width: 480px) {
   /* line 47, ../sass/cari.scss */
